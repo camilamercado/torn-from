@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		 <script src='https://code.jquery.com/jquery-latest.min.js'></script>
+		 <script type="text/javascript" charset="utf-8" src="tube/js/jquery.tubular.1.0.js"></script> 
+		 <link href="torn.css" rel="stylesheet" />
+	</head>
+
+	<body>
+
+		<div class="container">
+
+			<div class="tube"></div>
+
+			<div class="adBlocker"><p>Torn From<br>Direct on Film Animation<br>Rough Cut 2012</p></div>
+
+			<div class="frames"></div>
+
+		</div>
+
+<script type="text/javascript">
+
+$().ready(function() {
+    $('.tube').tubular({videoId: 'm5Cz944gito'}); // where idOfYourVideo is the YouTube ID.
+});
+
+$(".container").mouseover(function(){
+  $(".glass").show();
+});
+
+
+ $(function (slide) { 
+          
+                  counter = 0;
+
+             
+              $('body').click(function () {
+                  counter = (counter + 1) % frames.length; 
+                  $(".glass").hide();
+                  // increment your counter
+                  // the modulus (%) operator resets the counter to 0
+                  // when it reaches the length of the array
+                  document.querySelector(".frames").style.backgroundImage=frames[counter].image;
+                  console.log(frames[counter]); // the new incremented value
+              });
+          });
+
+
+var frames = [
+         
+          { 
+            image : "url(img/F1.png)"
+          },
+          
+          { 
+            image : "url(img/ani.jpg)"
+          },
+
+          { 
+            image : "url(img/F3.png)"
+          },
+
+          { 
+            image : "url(img/F4.png)"
+          },
+          
+          { 
+            image : "url(img/F5.png)"
+          },
+
+          { 
+            image : "url(img/F10.png)"
+          },
+
+          { 
+            image : "url(img/F11.png)"
+          },
+          
+          { 
+            image : "url(img/F12.png)"
+          },
+
+          { 
+            image : "url(img/F13.png)"
+          },
+
+          { 
+            image : "url(img/F14.png)"
+          },
+          
+          { 
+            image : "url(img/F15.png)"
+          },
+
+          { 
+            image : "url(img/F16.png)"
+          },
+
+          { 
+            image : "url(img/F17.png)"
+          },
+          
+          { 
+            image : "url(img/F18.png)"
+          },
+
+          { 
+            image : "url(img/F19.png)"
+          },
+
+          { 
+            image : ""
+          },
+
+        
+        ];
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
