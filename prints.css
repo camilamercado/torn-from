@@ -1,0 +1,70 @@
+.header {
+	
+	position: absolute;
+	left: 0px;
+	width: 100%;
+
+}
+
+.header .strip {
+	top: 0px;
+	width: 100%;
+	height: 100px;
+	background-image: url(img/film.png); 
+	background-size: auto 70px;
+	/*background: grey;*/
+	position: absolute;
+	opacity: 0.6;
+
+}
+
+.header .text {
+	/*padding-left: 50px;
+	padding-right: 50px;*/
+	margin-top: 200px;
+	width: 45%;
+	left: 26%;
+	position: absolute;
+	height: auto;
+	font-family:  "andale mono";
+	font-size: 13px;
+	color: dimgrey;
+}
+
+h1 {
+	font-weight: normal;
+}
+
+h2, h3 {
+	font-weight: normal;
+	font-size: 14px;
+	margin-left: 5px;
+	margin-top: -10px;
+}
+
+.frames {
+	
+	top: 600px;
+	position: absolute;
+	left: 20%;
+	margin-bottom: 150px;
+}
+
+.frames img {
+
+	width: 70%;
+	height: auto;
+	margin-top: 180px;
+
+}
+
+.frames p {
+
+	font-family: "andale mono";
+	font-size: 24px;
+	color: dimgrey;
+	/*padding-left: 20px;*/
+	position: absolute;
+	left: 75%;
+	margin-top: -30px;
+}
